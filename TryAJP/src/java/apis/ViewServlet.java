@@ -26,10 +26,18 @@ public class ViewServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ViewServlet</title>");            
+            out.println("<title>View Employees</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ViewServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Employee List</h1>");
+            
+            
+            out.println("<table>"
+                    + "<tr><td>Hriddhi Dey</td><td><a href='mail.html'>Send mail</a></td></tr>"
+                    + "<tr><td>Kashish Grover</td><td><a href='mail.html'>Send mail</a></td></tr>"
+                    + "</table>"
+                    + "");
+            
             out.println("</body>");
             out.println("<a href='portal.html'>Back</a>");
             out.println("</html>");
