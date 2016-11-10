@@ -9,13 +9,25 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-
-        <form action="LoginServlet" method="POST">
-            <input type="text" placeholder="Username" name="username"/>
-            <input type="password" placeholder="Password" name="password"/>
-            <input type="submit" value="Submit"/>
-        </form>
+        
+        <div class="card blue-grey darken-1 z-depth-4" style="width:60%; margin: 0 auto; margin-top: 100px;padding: 30px;">
+            <div class="card-content white-text">
+              <span class="card-title">Log In</span>
+                <form action="LoginServlet" method="POST" style="margin-top: 40px;">
+                    <input type="text" placeholder="Username" name="username" required="true"/>
+                    <input type="password" placeholder="Password" name="password" required="true"/>
+                    <a class="waves-effect waves-light btn" style="margin-top:20px;"><input type="submit" value="Log In" /></a>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
