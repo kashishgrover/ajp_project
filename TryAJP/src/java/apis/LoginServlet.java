@@ -37,6 +37,11 @@ public class LoginServlet extends HttpServlet {
                 out.println("<p>Redirecting in 5 seconds...</p>");
                 out.println("<script>setTimeout(function(){window.location.href='portal.html'},5000);</script>");
             }
+            else if(username.equals("kashish") && password.equals("zildjian")){
+                out.println("<h1>Successful Login!</h1><h2> Welcome " + username + "!</h2>");
+                out.println("<p>Redirecting in 5 seconds...</p>");
+                out.println("<script>setTimeout(function(){window.location.href='portal.html'},5000);</script>");
+            }
             else {
                 out.println("<p>Login failed.</p>");
                 out.println("<script>setTimeout(function(){window.location.href='index.html'},5000);</script>");
